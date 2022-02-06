@@ -7,13 +7,13 @@ application = Flask(__name__)
 application.config['SECRET_KEY'] = 'n067592548'
 
 
-@application.route('/', methods=["GET", "POST"])
+@app.route('/', methods=["GET", "POST"])
 def index():
     return render_template('index.html', **locals())
 
 
 
-@application.route('/chatbot', methods=["GET", "POST"])
+@app.route('/chatbot', methods=["GET", "POST"])
 def chatbotResponse():
 
     if request.method == 'POST':
@@ -26,4 +26,4 @@ def chatbotResponse():
 
 
 if __name__ == '__main__':
-    application.run(debug=True)
+    app.run(debug=True)
