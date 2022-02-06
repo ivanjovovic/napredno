@@ -2,9 +2,9 @@ from flask import Flask, render_template, jsonify, request
 import processor
 
 
-application = Flask(__name__)
+app = Flask(__name__)
 
-application.config['SECRET_KEY'] = 'n067592548'
+
 
 
 @app.route('/', methods=["GET", "POST"])
