@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Pitaj Sanela</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <div class="container">
+      <h1>Pitaj Sanela</h1>
+      <div class="opis">
+
+
+<p>Sanel je jednostavni bot koji će odgovoriti na sva vaša pitanja vezana za oblast vještačke inteligencije, mašinskog učenja, IoT i sličnih novosti.</p>        
+      </div>
+      <br>
+      <hr>
+      <br>
+
+        <div class="row">
+          <div class="col-lg-9">
+            <input class="form-control" type="text" name="question" id="question">
+          </div>
+          <div class="col-lg-3">
+            <button class="btn" id="submit-button">Pitaj</button>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col">
+            <p id="response"></p>
+          </div>
+        </div>
+
+    </div>
+
+    <div class="naslov">
+      <H1>Kviz provjere znaja</H1>
+    </div>
+    <div id="quiz-container">
+      <!-- question container -->
+      <div class="questions1">
+          <h2 id="question1"></h2>
+          <ol type="A">
+              <li class="option"><span id="option0" onclick="calcScore(this)"></span></li>
+              <li class="option"><span id="option1" onclick="calcScore(this)"></span></li>
+              <li class="option"><span id="option2" onclick="calcScore(this)"></span></li>
+              <li class="option"><span id="option3" onclick="calcScore(this)"></span></li>
+          </ol>
+          <h4 id="stat"></h4>
+      </div>
+
+      <div class="buttons">
+          <button type="button" class="next">Sledeće</button>
+      </div>
+
+  </div>
+
+  <!-- scoreboard section -->
+  <div id="scoreboard">
+      <img src="logo.png" alt="">
+      <h2 id="score-title">Rezultat</h2>
+      <h2 id="score"></h2>
+      <button type="button" id="score-btn" onclick="backToQuiz()">Nazad na kviz</button>
+      <button type="button" id="check-answer" onclick="checkAnswer()">Provjeri odgovore</button>
+  </div>
+
+  <!-- answers section -->
+  <div id="answerBank">
+      <h2>Odgovori :</h2>
+      <ol type="1" id="answers">
+
+      </ol>
+      <button type="button" id="score-btn" onclick="backToQuiz()">Nazad na kviz</button>
+  </div>
+
+    <script src="/static/jquery.min.js" ></script>
+    <script src="/static/quiz.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+    <script>
+
+
+      jQuery(document).ready(function() {
+
+        $("#submit-button").click(function(e) {
+          e.preventDefault();
+
+
+          $.ajax({
+              type: "POST",
+              url: "/chatbot",
+              data: {
+                  question: $("#question").val()
+              },
+              success: function(result) {
+                $("#response").append("<br>Ja: "+$("#question").val()+ "<br> Sanel: "+result.response);
+                $("#question").val("")
+              },
+              error: function(result) {
+                  alert('error');
+              }
+          });
+
+
+
+        });
+
+      });
+
+
+    </script>
+    
+  </body>
+</html>

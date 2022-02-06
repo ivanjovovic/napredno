@@ -1,0 +1,75 @@
+{
+  "intents": [
+    {"tag": "pozdravljanje",
+     "patterns": ["Zdravo", "Kako ide", "Ima li koga?","Cao","Hola", "Zdravo", "OO", "Hej", "Ej", "Zdravo brate"],
+     "responses": ["Zdravo legendo", "Zdravo zivo, kako mogu pomoci?", "Ej, sta ima?", "Cao cao", "Cao", "Cao baka", "Cao legendo"]
+    },
+    {"tag": "dovidjenja",
+     "patterns": ["Vidimo se", "Gledamo se kasnije", "Dovidjenja", "Pozdrav"],
+     "responses": ["Gledamo se", "Prijatan dan", "Vazi, pozdrav", "Kasnije brate", "Dovidjenja", "Pozdrav", "Vazda", "Cao"]
+    },
+    {"tag": "hvala",
+     "patterns": ["Thanks", "Puno hvala", "Hvala", "Zahvaljujem", "Hvala na pomoci"],
+     "responses": ["Drago mi je da sam pomogao!", "Vazda!", "Uvijek", "Nema na cemu", "Vazda brate"]
+    },
+    {"tag": "noanswer",
+     "patterns": ["","",""],
+     "responses": ["Izvini, ne razumijem te", "Mozes li mi dati vise informacija", "Nijesam siguran da razumijem pitanje", "Ja sam jos tu"]
+     },
+     {"tag": "ime",
+      "patterns": ["Kako je tvoje ime?", "Kako se zoves", "Reci mi tvoje ime", "Ko si ti", "Ti si?", "Reci mi o sebi", "Ti?"],
+      "responses": ["Ja sam Sanel", "Moje ime je Sanel", "Mozes me zvati Sanel", "Ja sam Sanel, prijatelji me zovu legenda", "Sanel je moje ime"]
+      },
+      {"tag": "opcije",
+       "patterns": ["Sta radis", "Sta je tvoj posao","Kako mi mozes pomoci", "Sta znas", "Koja je tvoja svrha", "Cime se bavis"],
+       "responses": ["Mogu ti reci o masinskom ucenju, vjestackoj inteligenciji i slicno", "Mogu ti reci zanimljive cinjenice o ML-u"]
+      },
+      {"tag": "ispiti",
+        "patterns": ["Kako da pocnem sa ucenjem", "Kako spremiti ispite","Kako da naucnim", "Kako da uradim"],
+        "responses": ["Ponavljanje je majka učenja.Možeš da ponavljaš naglas ili da postaviš sebi jedno od pitanja i da pokušaš da napišeš odgovor. To je najbolji način da shvatiš u kojoj mjeri je materija savladana.", "Čitaj polako. To što ćeš jednu lekciju pročitati za par minuta i nije neki uspeh. Takodje, veoma je vazno procitano gradivo provjezbati i primijeniti u praksi","Tako ćeš uvek imati sveijst o napretku, a i kada se baciš na intenzivno učenje najveći broj stvari će ti već biti poznat."]
+       },
+       {"tag": "vikend",
+        "patterns": ["Sta igrati za vikend", "Kako dobiti na kladionici","Imas li neki fiks", "Vikend?"],
+        "responses": ["Lacio ti je poklon", "Englezi p1+ u 16h", "Getafe prvo x","Samo zaobidji Anderlecht"]
+       },
+     {"tag": "ml_info",
+      "patterns": ["Masinsko ucenje", "Sta mi mozes reci o masinskom ucenju", "ML", "Reci mi nesto o masinskom ucenju", "Nesto o masinkom ucenju", "Sta znas o masinskom ucenju", "Reci mi vise o masinskom ucenju", "Sta mi jos mozes reci o masinkom ucenju", "Pricaj mi o MLu", "masinsko ucenje", "Nesto vise o masinskom ucenju", "Nesto o machine learning"],
+      "responses": ["Mašinsko učenje je podoblast vještačke inteligencije čiji je cilj konstruisanje algoritama i računarskih sistema koji su sposobni da se adaptiraju na analogne nove situacije i uče na bazi iskustva. Razvijene su različite tehnike učenja za izvršavanje različitih zadataka. Prve koje su bile predmet istraživanja, tiču se nadgledanog učenja za diskreciono donošenje odluka, nadgledanog učenja za kontinuirano predviđanje i pojačano učenje za sekvencionalno donošenje odluka, kao i nenadgledano učenje.","Mašinsko učenje se zasniva na ideji da postoje generički algoritmi koji vam mogu reći nešto interesantno o skupu podataka, a da pritom vi ne morate da napišete poseban kod za taj problem. Umesto da pišete kod, vi ubacite podatke u generički algoritam, a on napravi svoju logiku na osnovu podataka.","U svojoj srži, mašinsko učenje je zadatak pravljenja računara inteligentnijim a da ih eksplicitno ne učimo kako da se ponašaju. To radi identifikovanjem obrazaca u podacima – pogotovo korisno za različite, više dimenzionalne podatke","Klasičnom terminologijom rečeno, mašinsko učenje je vrsta vještačke inteligencije koja omogućava samostalno učenje iz podataka, a zatim primenjuje to učenje bez potrebe za ljudskom intervencijom. U stvarnosti, postoji mnogo različitih vrsta mašinskog učenja, najcesce nadgledano i nenadgledano ucenje, kao i mnogo strategija kako ih najbolje primeniti."]
+      },
+      {"tag": "vjestackainteligencija_info",
+        "patterns": ["Vjestacka inteligencija", "AI", "Artificial inteligence", "Reci mi nesto o vjestackoj inteligenciji", "Nesto o vjestackoj inteligenciji", "Sta znas o vjestackoj inteligenciji", "Reci mi vise o vjestackoj inteligenciji", "Sta mi jos mozes reci o vjestackoj inteligenciji", "Pricaj mi o AIu", "vjestacka inteligencija", "Nesto vise o AI-u", "Nesto o vjestackoj inteligenciji"],
+        "responses": ["Cilj istraživanja vještačke inteligencije je razvijanje programa (softvera), koji će omogućiti računarima da se ponašaju na način koji bi se mogao okarakterisati inteligentnim. Prva istraživanja se vežu za same korjene računarstva.","eštačka inteligencija je naučna oblast u kojoj se izučavaju izračunavanja da bi se izračunavanjem omogućila percepcija, rezonovanje i činjenje.","AI je nauka o stvaranju inteligentnih računarskih programa i mašina u pokušaju da imitira ljudske nivoe inteligencije.","Veštačka inteligencija je naučna oblast u kojoj se istražuje kako da se naprave računari koji bi uspešno radili stvari koje u ovom momentu rade bolje ljudi."]
+        },
+        {"tag": "nadgledanoucenje_info",
+          "patterns": ["Nadgledano ucenje", "Sta mi mozes reci o nadgledanom ucenju", "Supervised learnining", "Reci mi nesto o nadgledanom", "Nesto o nadgledanom ucenju", "Sta znas o nadgledanom ucenju", "Reci mi vise o nadgledanom ucenju", "Sta mi jos mozes reci o supervised learning", "Pricaj mi o nadgledanom ucenju", "nadgledano ucenje", "Nesto vise o nadgledanom ucenju", "Nesto o supervised learning"],
+          "responses": ["U nadgledanom algoritmu ML izlaz je već poznat. Postoji mapiranje ulaza sa izlazom. Stoga, da bi se kreirao model, mašina se napaja sa puno ulaznih podataka za obuku (sa poznatim ulazom i odgovarajućim izlazom).Primjeri algoritama su Nearest Neighbor, Naive Bayes, Drvo odluke, Linearna regresija, SVM, Neuralne mreze","Nadgledano ucenje - algoritmu se daju podaci iz kojih uci i zeljeni izlazi. Algoritam treba da nauci da za date podatke pruzi odgovarajuce izlaze.Primjeri algoritama su Nearest Neighbor, Naive Bayes, Drvo odluke, Linearna regresija, SVM, Neuralne mreze","Nadgledano učenje podrazumijeva treniranje programa unošenjem velikog broja riješenih primjera.Cilj je unijeti što više poznatih vrijednosti funkcije f(x) za određene vrijednosti varijable x, na osnovu kojih bi program bio sposoban kao rezultat dati (približno) tačnu vrijednost funkcije za neko novo x, sa kojim se prvi put sreće.Primjeri algoritama su Nearest Neighbor, Naive Bayes, Drvo odluke, Linearna regresija, SVM, Neuralne mreze"]
+          },
+          {"tag": "nenadgledanoucenje_info",
+            "patterns": ["Nenadgledano ucenje", "Sta mi mozes reci o nenadgledanom ucenju", "Unsuprevised learning", "Reci mi nesto o nenadgledanom ucenju", "Nesto o nenadgledanom ucenju", "Sta znas o nenadgledanom ucenju", "Reci mi vise o nenadgledanom ucenju", "Sta mi jos mozes reci o nenadgledanom ucenju", "Pricaj mi o unsupervised learning", "nenadgledano ucenje", "Nesto vise o nenadgledanom ucenju", "Nesto o unsupervised learning"],
+            "responses": ["Nenadgledano ucenje - algoritmu se pruzaju samo podaci bez izlaza. A Algoritam treba sam da uoci neke zakonitosti u podacima koji su mu dati. Primjeri algoritama su klustering i asocijativna pravila", "Nenadgledano mašinsko učenje oslanja se na ideju da u program unesemo određenu količinu podataka, među kojima on treba da pronađe povezanosti i korelacije, bez ranije definisanih “riješenih primjera”, odnosno, bez definisane tražene vrijednosti ili rezultata.Primjeri algoritama su klustering i asocijativna pravila "]
+            },
+            {"tag": "dubokoucenje_info",
+              "patterns": ["Duboko ucenje", "Sta mi mozes reci o dubokom ucenju", "Deep learning", "Reci mi nesto o dubokom ucenju", "Nesto o dubokom ucenju", "Sta znas o dubokom ucenju", "Reci mi vise o dubokom ucenju", "Sta mi jos mozes reci o dubokom ucenju", "Pricaj mi o deep learning", "duboko ucenje", "Nesto vise o dubokom ucenju", "Nesto o deep learning"],
+              "responses": ["Dok mašinsko učenje radi sa preciznom setu karakteristika uzetih iz sirovih podataka i zahteva postojanje ekstraktora karakteristika (recimo, za prepoznavanje lica na slikama, koristi se facijalni ekstraktor), duboko učenje omogućuje samostalno učenje kompleksnih karakteristika iz samih podataka. Tako će, umesto potrebe za facijalnim ekstraktorom, pokušati da nauči osobenosti lika, poput razdaljine između različitih delova vašeg lica ili dužine nosa.","Koncept dubokog učenja (deep learning) upućuje na drugu klasifikaciju i označava pristup obuci takozvanih dubokih struktura koje uključuju višerazinske neuronske mreže. ","Duboko učenje pripada domenu veštacke inteligencije i mašinskog učenja. Tokom poslednje decenije dubokom učenju i veštackim neuralnim mrežama su posvećeni značajni naučni i tehnološko-razvojni resursi zbog potencijala da reši široku klasu problema za koje konvencionalni metodi nisu dali adekvatan odgovor. Klasifikacija slika, prepoznavanje govora, prevodjenje iz jednog na drugi jezik, medicinska dijagnostika, kontrola funkcija robota i vozila su samo neki od primera primene dubokog učenja i neuralnih mreža. Duboko učenje je ekvivalentno uvodjenju električne energije sa početka 20. veka, izjava koja ilustruje ogroman entuzijazam koji je prisutan u svetu nauke i tehnologije."]
+              },
+              {"tag": "neuronskemreze_info",
+                "patterns": ["Neuronske mreze", "Sta mi mozes reci o neuronskim mrezama", "Neural networks", "Reci mi nesto o neuralnim mrezama", "Nesto o neuronskim mrezama", "Sta znas o neuronskim mrezama", "Reci mi vise o neuronskim mrezama", "Sta mi jos mozes reci o neural network-u", "Pricaj mi o neuronskim mrezama", "neuralne mreze", "Nesto vise o neuralnim mrezama", "Nesto o neural networku"],
+                "responses": ["Neuralne mreže (Neural Networks - NN) predstavljaju novu generaciju sistema za informaciono procesiranje koje pokazuju osobinu učenja, memorisanja i generalizacije na osnovu podataka kojima se obučavaju. Pokazuje se da su vrlo  efikasne u zadacima kao što su mečovanje i klasifikacija oblika, aproksimacija funkcija, optimizacija, vektorska kvantizacija, klasterizacija podataka, dok su konvencionalni računari, zbog svoje arhitekture vrlo neefikasni, pogotovo u domenu mečovanja oblika. Istini za volju, konvencionalni računari su brži uračunskim algoritmima i preciznim aritmetičkim operacijama.","Neuronska mreža je jedan oblik implementacije sistema veštačke inteligencije, koji predstavlja sistem koji se sastoji od određenog broja međusobno povezanih procesora ili čvorova, ili procesnih elemenata koje nazivamo veštačkim neuronima.Arhitektura neuronske mreže predstavlja specifično povezivanje neurona u jednu celinu. Struktura neuronske mreže se razlikuje po broju slojeva. Prvi sloj se naziva ulazni, a poslednji izlazni, dok se slojevi između nazivaju skriveni slojevi. Najčešće ih ima tri. Prvi sloj, tj. ulazni je jedini sloj koji prima podatke iz spoljašnje sredine, sledeći (skriveni) prosleđuje relevantne podatke do trećeg (izlaznog) sloja. Na izlazu trećeg sloja dobijamo konačan rezultat. Složenije neuronske mreže imaju više skrivenih slojeva. Slojevi su međusobno potpuno povezani.Slojevi komuniciraju tako što se izlaz svakog neurona iz prethodnog sloja povezuje sa ulazima svih neurona narednog sloja. Znači, svaki čvor ima nekoliko ulaza i jedan izlaz. Jačina veza kojom su neuroni povezani naziva se težinski faktor (weight).","U tehnologiji, neuronske mreže se često nazivaju veštačke neuronske mreže (ANN) ili neuronske mreže da bi se razlikovale od bioloških neuronskih mreža na kojima su modelirani. Glavna ideja ANN-a je da je ljudski mozak najkompleksniji i inteligentniji kompjuter koji postoji. Modeliranjem ANN-a što je bliže strukturi i sistemu obrade informacija koje koristi mozak, istraživači se nadali da će stvoriti računare koji su pristupali ili prevazišli ljudsku inteligenciju. Neuronske mreže su ključna komponenta trenutnih napretaka u veštačkoj inteligenciji (AI), mašinskom učenju (ML) i dubokom učenju ."]
+                },
+      {"tag": "facts",
+       "patterns": ["cinjenice", "zanimljivosti", "Reci mi zanimljivosti", "Daj mi zanimljivosti", "zanimljivo", "Masinsko ucenje cinjenice", "Cinjenice masinsko ucenje", "Masinsko ucenje zanimljive stvari", "Reci mi zanimljivosti o AI"],
+       "responses": [
+         "Ocekuje se povecanje od 300% u investicijama u oblasti masinskog ucenja i AI",
+         "89% je preciznost Google-ovog ML programa za detekciju raka dojke.",
+         "Netflix je ustedio 1 milijardu dolara koristeci ML algoritam za predlaganje personalizovanog sadrzaja korisnicima.",
+         "97% mobilnih korisnika preferira glasovnog asistenta, koji radi na osnovu ML.",
+         "74% data scientista koristi alate masinskog ucenja za potrebe analize i izvjestavanja.",
+         "91% najistaknutijih kompanija svijeta je vec ukljuceno u ML, AI i automatizaciju",
+         "20% rukovodilaca kompanija smatra da je masinsko ucenje kljucni dio kljucni dio njigovih operacija.",
+         "54% je rast produktivnosti zabiljezen u kompanijama  koje su implementirale masinsko ucenje i AI.", 
+         "Zemlje koje su najistaknutije u usvajanju tehnika i alata ML su Izrael, Holandija, Amerika, Njemacka itd."
+         
+       ]
+      }
+  ]
+}
